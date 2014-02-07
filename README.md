@@ -37,19 +37,73 @@ cp -r myFolder/ myNewFolder
 
 * cp (folder and individual files)
 * rm (file and directories)
-* rmdir
-* ln -s
-* scp
-* pwd
-* ls (hidden files and files starting or ending with specific patterns like all files ending in txt or all files starting with the letter b)
-* tar
+ 
+__Examples:__
 
+```
+rm <filename>
+```
+
+* rmdir (remove directory) that is empty
+__Examples:__
+
+```
+rmdir <directory name>
+```
+* ln -s (symbolic link)
+__Examples:__
+
+```
+ln -s myfile myotherfile
+```
+* scp (secure copy
+__Examples:__
+
+```
+scp  <filename>
+```
+* pwd (print file name of dir)
+__Examples:__
+
+```
+pwd 
+
+i.e.  where you are now in filesystem
+```
+* ls (hidden files and files starting or ending with specific patterns like all files ending in txt or all files starting with the letter b)
+__Examples:__
+
+```
+<filename/dir> etc.
+```
+* tar (saves  many files together into a single tape or disk archive, and can restore individual files from
+       the archive.)
+__Examples:__
+
+```
+tar -xf archive.tar #extact all files from archive.tar.
+```
 ## File Transfer
 
-* curl
-* wget
-* scp
-* rsync
+* curl (transfer URL)
+* wget retrieve networks
+__Examples:__
+
+```
+wget [OPTION] ... [URL]...
+```
+* scp copies files between hosts on a network
+__Examples:__
+
+```
+scp -1 forces scp to use protocol 1
+```
+* rsync (copies files)
+__Examples:__
+
+```
+rsync [option..] src[...[dest]
+```
 
 ## Pipe tools
 
